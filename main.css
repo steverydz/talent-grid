@@ -88,3 +88,27 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.grid-wrapper {
+  position: relative;
+  width: calc(600px + 3rem);
+  padding-bottom: 3rem;
+  padding-left: 3rem;
+}
+
+.axis-label-x,
+.axis-label-y {
+  position: absolute;
+}
+
+.axis-label-x {
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0.75rem;
+}
+
+.axis-label-y {
+  left: -1.5rem;
+  transform: rotate(-90deg);
+  top: calc(50% - 3rem);
+}
