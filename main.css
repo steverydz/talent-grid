@@ -15,6 +15,15 @@
 .grid__cell {
   border-right: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid__cell .p-icon--user {
+  display: none;
+  width: 2rem;
+  height: 2rem;
 }
 
 .grid__cell:nth-child(3n) {
@@ -55,9 +64,8 @@
   background-color: #eee;
 }
 
-.grid__cell--selected,
-.grid__cell--selected:hover {
-  background-color: green;
+.grid__cell--selected .p-icon--user {
+  display: block;
 }
 
 .loader {
