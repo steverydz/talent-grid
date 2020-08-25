@@ -103,7 +103,6 @@
 
 .axis-label-x {
   left: 50%;
-  transform: translateX(-50%);
   bottom: 0.75rem;
 }
 
