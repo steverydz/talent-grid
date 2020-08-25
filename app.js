@@ -40,7 +40,7 @@
       setTimeout(() => {
         grid.classList.remove("grid--saving");
         loader.classList.remove("loader--show");
-      }, 1000);
+      }, 500);
     });
   });
 })();
