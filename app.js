@@ -21,8 +21,8 @@
         potentialScore = cell.dataset.potential;
         cell.classList.add("grid__cell--selected");
       } else {
-        performanceScore = 0;
-        potentialScore = 0;
+        performanceScore = "Not rated";
+        potentialScore = "Not rated";
       }
 
       performanceScoreDisplay.innerText = performanceScore;
