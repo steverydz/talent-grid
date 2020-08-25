@@ -14,11 +14,47 @@ html {
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   width: 600px;
   height: 600px;
+  border-left: 3px solid #ccc;
+  border-top: 3px solid #ccc;
 }
 
 .grid__cell {
-  border-right: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.grid__cell:nth-child(3n) {
+  border-right: 3px solid #ccc
+}
+
+.grid__cell:nth-child(19),
+.grid__cell:nth-child(20),
+.grid__cell:nth-child(21),
+.grid__cell:nth-child(22),
+.grid__cell:nth-child(23),
+.grid__cell:nth-child(24),
+.grid__cell:nth-child(25),
+.grid__cell:nth-child(26),
+.grid__cell:nth-child(27),
+.grid__cell:nth-child(46),
+.grid__cell:nth-child(47),
+.grid__cell:nth-child(48),
+.grid__cell:nth-child(49),
+.grid__cell:nth-child(50),
+.grid__cell:nth-child(51),
+.grid__cell:nth-child(52),
+.grid__cell:nth-child(53),
+.grid__cell:nth-child(54),
+.grid__cell:nth-child(73),
+.grid__cell:nth-child(74),
+.grid__cell:nth-child(75),
+.grid__cell:nth-child(76),
+.grid__cell:nth-child(77),
+.grid__cell:nth-child(78),
+.grid__cell:nth-child(79),
+.grid__cell:nth-child(80),
+.grid__cell:nth-child(81) {
+  border-bottom: 3px solid #ccc;
 }
 
 .grid__cell:hover {
