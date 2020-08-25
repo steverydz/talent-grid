@@ -1,4 +1,5 @@
 (function () {
+  const grid = document.querySelector("#grid");
   const gridCells = document.querySelectorAll(".grid__cell");
   const performanceScoreDisplay = document.querySelector("#performance-score");
   const potentialScoreDisplay = document.querySelector("#potential-score");
@@ -31,13 +32,12 @@
         potential: potentialScore,
       };
 
-      // fetch("http://localhost:8080", {
-      //   type: "post",
-      //   headers: {
-      //     "Content-Type": "application/json",
-      //     body: JSON.stringify(data),
-      //   },
-      // });
+      // Pretend http request
+      grid.classList.add("grid--saving");
+
+      setTimeout(() => {
+        grid.classList.remove("grid--saving");
+      }, 1000);
     });
   });
 })();
