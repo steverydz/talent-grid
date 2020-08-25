@@ -3,6 +3,7 @@
   const gridCells = document.querySelectorAll(".grid__cell");
   const performanceScoreDisplay = document.querySelector("#performance-score");
   const potentialScoreDisplay = document.querySelector("#potential-score");
+  const loader = document.querySelector(".loader");
 
   let performanceScore = 0;
   let potentialScore = 0;
@@ -34,9 +35,11 @@
 
       // Pretend http request
       grid.classList.add("grid--saving");
+      loader.classList.add("loader--show");
 
       setTimeout(() => {
         grid.classList.remove("grid--saving");
+        loader.classList.remove("loader--show");
       }, 1000);
     });
   });
