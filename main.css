@@ -99,15 +99,17 @@
 .axis-label-x,
 .axis-label-y {
   position: absolute;
+  text-align: center;
 }
 
 .axis-label-x {
-  left: 50%;
+  left: 3rem;
   bottom: 0.75rem;
+  width: 600px;
 }
 
 .axis-label-y {
-  left: -0.75rem;
   transform: rotate(-90deg);
-  top: calc(50% - 3rem);
+  top: 288px;
+  left: -0.5rem;
 }
